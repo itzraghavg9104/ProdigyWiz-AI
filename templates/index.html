@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProdigyWiz AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <h1>ProdigyWiz AI</h1>
+
+    <!-- Chat Box and Menu -->
+    <div id="chat-box">
+        <div id="chat-log">
+            <p class="user-message">Type <strong>START</strong> to begin the learning session....... </p>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Type START to begin the learning session.......">
+            <button type="submit">Send</button>
+            <button id="menu-toggle" type="button">Menu</button> <!-- Moved the menu button here -->
+        </form>
+    </div>
+
+    <!-- Side Menu -->
+    <div id="side-menu" class="hidden">
+        <button class="menu-btn" data-message="Next">Next</button>
+        <button class="menu-btn" data-message="Previous concept">Previous</button>
+        <button class="menu-btn" data-message="Explain more">Explain</button>
+        <button class="menu-btn" data-message="Ask Doubt">Doubt</button>
+        <button class="menu-btn" data-message="Quiz">Quiz</button>
+        <button class="menu-btn" data-message="Challenge">Challenge</button>
+        <button class="menu-btn" data-message="Fun fact">Fun Fact</button>
+        <button class="menu-btn" data-message="Joke">Joke</button>
+        <button class="menu-btn" data-message="Bookmark">Bookmark</button>
+        <button class="menu-btn" data-message="Access to bookmarked topic">Bookmarks</button>
+        <button class="menu-btn" data-message="Summary">Summary</button>
+        <button class="menu-btn" data-message="Feedback">Feedback</button>
+        <button class="menu-btn" data-message="Jump">Jump</button>
+        <button class="menu-btn" data-message="Practice Sheet">Practice</button>
+        <button class="menu-btn" data-message="Reset">Reset</button>
+        <button class="menu-btn" data-message="Exit Raghav's ProdigyWiz AI">Exit</button>
+    </div>
+</body>
+</html>

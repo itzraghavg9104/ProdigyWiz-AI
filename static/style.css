@@ -1,0 +1,167 @@
+/* Basic reset for cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Container for the chat box */
+#chat-box {
+    width: 100%;
+    max-width: 100%;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat log styling */
+#chat-log {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border-bottom: 1px solid #444;
+}
+
+/* User and AI message styling */
+.user-message, .ProdigyWiz-response {
+    background: #2c2c2c;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Form styling */
+#chat-form {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-top: 1px solid #444;
+    position: sticky;
+    bottom: 0;
+}
+
+/* Input styling */
+#user-input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+}
+
+/* Button styling */
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    background-color: #1E90FF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0066cc;
+}
+
+/* Display Menu Button */
+#menu-toggle {
+    margin-left: 10px; /* Space between Send and Menu button */
+}
+
+/* Side Menu Styling */
+#side-menu {
+    position: fixed;
+    top: 60px; /* Adjusted to be below the header */
+    right: 20px;
+    width: 180px;
+    max-height: calc(100% - 100px);
+    background-color: #333;
+    padding: 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+#side-menu.hidden {
+    transform: translateX(200px); /* Hide the menu */
+}
+
+/* Menu button styles */
+.menu-btn {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #444;
+    border: 1px solid #1E90FF;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.menu-btn:hover {
+    background-color: #555;
+}
+
+/* Typography enhancements */
+h1 {
+    text-align: center;
+    color: #1E90FF;
+    margin: 20px 0;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+    #chat-box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    #chat-box {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
