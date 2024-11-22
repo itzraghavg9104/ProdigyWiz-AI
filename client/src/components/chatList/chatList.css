@@ -24,6 +24,10 @@
     overflow: scroll;
   }
 
+  .list::-webkit-scrollbar {
+    width: 0px; /* Set the scrollbar width */
+  }
+
   a {
     padding: 10px;
     border-radius: 10px;

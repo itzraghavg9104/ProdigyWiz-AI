@@ -105,6 +105,7 @@ const NewPrompt = ({ data }) => {
         accumulatedText += chunkText;
         setAnswer(accumulatedText);
       }
+      // console.log(accumulatedText);
 
       mutation.mutate();
     } catch (err) {

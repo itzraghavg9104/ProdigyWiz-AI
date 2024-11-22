@@ -5,7 +5,7 @@
   height: 100%;
 
   .menu {
-    flex: 1;
+    max-width: 20%;
   }
 
   .content {
