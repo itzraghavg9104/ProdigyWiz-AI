@@ -1,0 +1,133 @@
+/* .menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .menu-options {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .menu-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .menu-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .menu-text {
+    margin-left: 10px;
+  }
+  
+  .menu-description {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    z-index: 1;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+  }
+  
+  
+  
+  .menu-item svg {
+    font-size: 20px;
+  }
+  
+   */
+   .menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .menu-options {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+    bottom: 100%; /* Position the menu above the button */
+    left: 0;
+    margin-bottom: 5px; /* Add a small gap between the button and the menu */
+  }
+  
+  .menu-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .menu-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .menu-text {
+    margin-left: 10px;
+  }
+  
+  .menu-description {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    z-index: 1;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+  }
+  
+  
+  
+  .menu-item svg {
+    font-size: 20px;
+  }
+  
+  
