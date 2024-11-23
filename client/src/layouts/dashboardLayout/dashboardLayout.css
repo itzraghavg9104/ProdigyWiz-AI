@@ -3,9 +3,9 @@
   gap: 50px;
   padding-top: 20px;
   height: 100%;
-
+ margin-top: 50px;
   .menu {
-    max-width: 20%;
+    /* min-width: 20%; */
   }
 
   .content {

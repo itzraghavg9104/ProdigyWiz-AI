@@ -1,8 +1,9 @@
 .chatList {
   display: flex;
   flex-direction: column;
-  height: 100%;
-
+  height: 90%;
+  width: 100%;
+ padding-top: 70px;
   hr {
     border: none;
     height: 2px;
@@ -43,7 +44,9 @@
     align-items: center;
     gap: 10px;
     font-size: 12px;
-
+   position: fixed;
+   bottom: 10px;
+   margin-top: 5px;
     img {
       width: 24px;
       height: 24px;
